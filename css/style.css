@@ -1,10 +1,6 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+ /* ==========
+Barra de navegação
+========== */
 
 nav ul a,
 nav .brand-logo {
@@ -17,50 +13,78 @@ margin-top: 1%;
 margin-bottom: 1%;
 }
 
+
+.sidenav-trigger {
+    color: #26a69a;
+  }
+
+  .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+    font-size: inherit;
+  }
+ /* ==========
+Fim Barra de navegação
+========== */
+
+
+ /* ==========
+Banner
+========== */
 p {
   line-height: 2rem;
 }
 
-.sidenav-trigger {
-  color: #26a69a;
-}
 
+@media only screen and (max-width : 992px) {
+    #index-banner .section {
+      top: 10%;
+    }
+  }
+  
+  @media only screen and (max-width : 600px) {
+    #index-banner .section {
+      top: 0;
+    }
+  }
+
+ /* ==========
+Parallax
+========== */
 .parallax-container {
   min-height: 380px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 80%;
-  }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
+/* ==========
+Fim Banner
+========== */
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
+/* ==========
+Seção 4
+========== */
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
+.secao-4-article { /*centraliza o texto em cima da foto*/
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+@media screen and (max-width: 992px) { /*separa as imagens em telas menores*/
+    .secao-4 .col + .col {
+      margin-top: 20px;
+    }
+  }
 
 /* ==========
 Rodapé
 ========== */
+
 footer.page-footer {
   margin: 0;
 }
@@ -69,28 +93,18 @@ footer .social-media{
   display:inline-block
 }
 
+/* ==========
+Rodapé
+========== */
+
+/* ==========
+Seção 6
+========== */
+
 #formulario{
   margin: 20px auto;
 }
 
-@media only screen and (min-width : 415px){
-  section .parallax-container{
-   width: 30%;
-   height: auto;
-   margin: 30px;
-   display: inline-block;
-  }
-}
-
-@media only screen and (max-width: 414px){
-  section .parallax-container{
-    width: 80%;
-    height: auto;
-    margin: 30px;
-    display: block;
-  }
-
-
-  
-}
-
+/* ==========
+Fim Seção 6
+========== */
